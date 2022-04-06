@@ -7,14 +7,9 @@ Date: 04/05/2022
 2. Is Java compiled or interpreted, or both? Java program is first compiled into bytecode which JRE can understand. ByteCode is then interpreted by the JVM making it as interpreted language. Note that Java implementations typically use a two-step compilation process. Java source code is compiled down to bytecode by the Java compiler. The bytecode is executed by a Java Virtual Machine (JVM). Modern JVMs use a technique called Just-in-Time (JIT) compilation to compile the bytecode to native instructions understood by hardware CPU on the fly at runtime.
 3. Solution:
 
-3.1. START
-
-3.20 USD Amount <-- GET
-
-3.3. BTCprice <-- GET FROM(https://www.coindesk.com/price/bitcoin/)
-
-3.4. Total <-- USD Amount / BTCprice
-
-3.5. PRINT Total
-
-3.6. END
+''' START
+''' USD Amount <-- GET
+''' BTCprice <-- GET FROM(https://www.coindesk.com/price/bitcoin/)
+''' Total <-- USD Amount / BTCprice
+''' PRINT Total
+''' END
