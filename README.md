@@ -13,3 +13,8 @@ Date: 04/05/2022
 ''' Total <-- USD Amount / BTCprice
 ''' PRINT Total
 ''' END
+
+Date: 04/06/2022
+1. Your date of birth in the matrix? My DOB is 12/04/1994 which in binary is 1100/1/1111100101.
+2. Create a program to add two numbers given by the user:
+
