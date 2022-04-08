@@ -1,4 +1,4 @@
-# core-code-from-scratch-readme
+# Started-From-The-Bottom
 
 Date: 04/05/2022
 1. Interpreted and compiled programming languages, explanation: 
