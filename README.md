@@ -88,3 +88,46 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 ```
 
 
+### Date: 04/07/2022
+
+**1. Print Special Numbers**
+```
+let str = '';
+
+for (let i = 2; i < 101; i++) {
+  str = str + i;
+}
+
+console.log(str);
+```
+
+**2. Bad Code 1**
+
+By using the statement "cond = true", the variable value was changed and the statement was turned in a true statement. Also, when using and if...else statement, the condidition should be between one set of parenthesis not two. Even though I used the documentation on the exercies resources, when running it, it continues to print de "The cond variable is true". :(
+
+```
+var cond = false;
+
+if (cond) {
+    console.log('The cond variable is true');
+} else {
+    console.log('The cond variable is false');
+}
+```
+
+**3. Bad Code 2**
+
+The syntax was incorrect. It should have been: if, else if, else.
+```
+var n = 100;
+
+if (n == 100) {
+    console.log('This is a special number!');
+}
+else if (n < 1000 && n % 10 == 0) {
+    console.log('This is almost special');
+} 
+else {
+    console.log('Just a regular number');
+}
+```
