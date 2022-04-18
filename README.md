@@ -94,7 +94,7 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 ```
 let str = '';
 
-for (let i = 2; i < 101; i++) {
+for (let i = 0; i < 101; i++) {
   str = str + i;
 }
 
