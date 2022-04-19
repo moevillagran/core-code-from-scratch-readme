@@ -92,13 +92,9 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 
 **1. Print Special Numbers**
 ```
-let str = '';
-
-for (let i = 0; i < 101; i++) {
-  str = str + i;
+for (var i = 0; i <= 101; i++) {
+  console.log(i);
 }
-
-console.log(str);
 ```
 
 **2. Bad Code 1**
