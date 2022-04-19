@@ -92,7 +92,7 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 
 **1. Print Special Numbers**
 ```
-for (var i = 0; i <= 101; i++) {
+for (var i = 0; i <= 100; i = i + 2) {
   console.log(i);
 }
 ```
