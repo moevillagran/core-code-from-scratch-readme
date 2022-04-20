@@ -127,3 +127,59 @@ else {
     console.log('Just a regular number');
 }
 ```
+
+
+## Week 2
+
+### Date: 04/19/2022
+**1. Multiply Exercies**
+```
+function multiply(a, b){
+ return a * b
+}
+```
+
+**2. ASCII Total Exercies**
+```
+function uniTotal(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    count += str.charCodeAt(i);
+  }
+  return count;
+}
+```
+
+**3. Char From ASCII Value**
+```
+function getChar(c){
+return String.fromCharCode(c);
+}
+```
+
+**4. Binary Addition**
+```
+function addBinary(a,b) {
+let sum = a + b;
+  return sum.toString(2);
+}
+```
+
+**5. Student's Final Grade**
+```
+function finalGrade(exam, projects) {
+  let total = 0;
+  
+  if (exam > 90 || projects > 10) {
+  total = 100;
+} else if (exam > 75 && projects >= 5) {
+  total = 90;
+} else if (exam > 50 && projects >= 2) {
+  total = 75; 
+} else {
+  total = 0;
+}
+  return total;  
+}
+```
+
