@@ -203,4 +203,31 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 }
 ```
 
-**3. 
+**3. Valid Spacing Exercise**
+```
+function validSpacing(s) {
+  if (s.length === 0) return true;
+  if (s[0] === ' ' || s[s.length - 1] === ' ') return false;
+  let aSpaces0 = s.split(' ');
+  for (let i = 0, length = aSpaces0.length; i < length; i++) {
+    if (aSpaces0[i] === '') return false;
+  }
+  return true;
+}
+```
+
+**4. Fake Binary Exercies**
+```
+function fakeBin(x){
+let digits = '';
+    for (let i = 0; i < x.length; i++) {
+      if (parseInt(x[i]) < 5){
+        digits = digits + '0';
+      } else {
+        digits = digits + '1';
+      }
+    }
+  return digits;
+}
+```
+
