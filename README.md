@@ -183,3 +183,24 @@ function finalGrade(exam, projects) {
 }
 ```
 
+### Date: 04/19/2022
+
+**1. Holiday VIII - Duty Free**
+```
+function dutyFree(normPrice, discount, hol){
+let result1 = ((normPrice * discount) / 100);
+let result2 = hol / result1;
+let result3 = Math.floor(result2);
+  return result3;
+}
+```
+
+**2. Twice As Old**
+```
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  let difference = ((dadYearsOld - sonYearsOld) * 2) - dadYearsOld;
+  return Math.abs(difference);
+}
+```
+
+**3. 
