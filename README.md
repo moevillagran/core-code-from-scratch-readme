@@ -132,14 +132,14 @@ else {
 ## Week 2
 
 ### Date: 04/19/2022
-**1. Multiply Exercies**
+**1. Multiply**
 ```
 function multiply(a, b){
  return a * b
 }
 ```
 
-**2. ASCII Total Exercies**
+**2. ASCII Total**
 ```
 function uniTotal(str) {
   let count = 0;
@@ -183,7 +183,7 @@ function finalGrade(exam, projects) {
 }
 ```
 
-### Date: 04/19/2022
+### Date: 04/20/2022
 
 **1. Holiday VIII - Duty Free**
 ```
@@ -216,7 +216,7 @@ function validSpacing(s) {
 }
 ```
 
-**4. Fake Binary Exercies**
+**4. Fake Binary**
 ```
 function fakeBin(x){
 let digits = '';
@@ -228,6 +228,77 @@ let digits = '';
       }
     }
   return digits;
+}
+```
+
+### Date: 04/20/2022
+**1. Remove All Exclamation Marks From The End Of Sentence**
+```
+function remove(inputString) {  
+let result = inputString;
+while (result[result.length - 1] === "!"){
+  result = result.slice(0,-1);
+}
+  return result;  
+}
+```
+
+**2. Vowel Remover**
+```
+function shortcut(mytext) {
+  return mytext.replace(/[aeiou]/g, '');
+}
+```
+
+**3. Rock Paper Scissors!**
+```
+const rps = (user1, user2) => {
+  let result = "";
+  if (user1 === user2) {
+    result = "Draw!";
+  }
+  else if (user1 === "paper" && user2 === "rock") {
+    result = "Player 1 won!";    
+  }
+  else if (user1 === "scissors" && user2 === "paper") {
+    result = "Player 1 won!";
+  }
+  else if (user1 === "rock" && user2 === "scissors") {
+    result = "Player 1 won!";
+  }
+  else if (user1 === "paper" && user2 === "scissors") {
+    result = "Player 2 won!";    
+  }
+  else if (user1 === "scissors" && user2 === "rock") {
+    result = "Player 2 won!";
+  }
+  else if (user1 === "rock" && user2 === "paper") {
+    result = "Player 2 won!";
+  }
+  return result
+} 
+```
+
+**4. Persistent Bugger**
+```
+function persistence(num) {
+  let counter = 0;
+  
+  let digits = num.toString().split(""); // 39 -> "39" -> ["3", "9"]
+  
+  while (digits.length > 1) {
+    let results = 1;
+    
+    for (let i = 0; i < digits.length; i++){
+      results = results * digits[i];
+    }
+    
+    digits = results.toString().split("");
+    
+    counter = counter + 1;
+  }
+ 
+  return counter;
 }
 ```
 
