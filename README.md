@@ -305,7 +305,7 @@ function persistence(num) {
 ## Week 3
 
 ### Date: 04/25/2022
-**1. Who likes it?
+**1. Who likes it?**
 ```
 function likes(names) {
   if (names.length == 0) return 'no one likes this';
@@ -329,7 +329,7 @@ var countBits = function(n) {
 };
 ```
 
-**3. Your Order, Please **
+**3. Your Order, Please**
 ```
 function order(words){
   return words.split(' ').sort(function(a, b){
