@@ -302,3 +302,38 @@ function persistence(num) {
 }
 ```
 
+## Week 3
+
+### Date: 04/25/2022
+**1. Who likes it?
+```
+function likes(names) {
+  if (names.length == 0) return 'no one likes this';
+  if (names.length == 1) return names[0] + ' likes this';
+  if (names.length == 2) return names[0] + ' and ' + names[1] + ' like this';
+  if (names.length == 3) return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this';
+  return (names[0] +', ' + names[1] + ' and ' + (names.length - 2) + ' others like this');
+}
+```
+
+**2. Bit Counting**
+```
+var countBits = function(n) {
+   // make an array with the bit result
+   const base = (n).toString(2).split('');
+   
+   // make a sum with the array and make the index a Number
+   const result = base.reduce((sum, num) => sum + Number(num), 0);
+   
+   return result;
+};
+```
+
+**3. Your Order, Please **
+```
+function order(words){
+  return words.split(' ').sort(function(a, b){
+      return a.match(/\d/) - b.match(/\d/);
+   }).join(' ');
+}  
+```
