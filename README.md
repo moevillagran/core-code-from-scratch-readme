@@ -337,3 +337,76 @@ function order(words){
    }).join(' ');
 }  
 ```
+### Date: 04/25/2022
+**1. Simple Pig Latin**
+
+Solution: https://www.youtube.com/watch?v=M2_mU06kY7E
+
+Code:
+
+```
+function pigIt(str){
+  let newArr = [];
+  let strArr = str.split(" ")
+  strArr.forEach(x => {
+    let wordArr = x.split("")
+    wordArr.push(wordArr[0], 'ay'), wordArr.shift()
+    if (x === "!" || x === "?" || x === "." || x === "," || x === ";"){
+      newArr.push(x)
+    } else {
+      newArr.push(wordArr.join(""))
+    }    
+  })
+  return newArr.join(" ")
+  
+}
+```
+**2. Counting Duplicates**
+
+Solution: https://codesandbox.io/s/76drd?file=/src/index.js:0-392
+
+Code:
+```
+const duplicateCount = (text) => {
+  const splitString = text.toLowerCase().split("").sort();
+  let results = [];
+
+  for (let i = 0; i < splitString.length; i++) {
+    if (splitString[i] === splitString[i + 1]) {
+      results.push(splitString[i]);
+    }
+  }
+  const setArray = new Set(results);
+  return setArray.size;
+};
+
+duplicateCount("aabBcde");
+console.log(duplicateCount("aaabBcde"));
+```
+
+**3. Decode The Morse Code**
+
+Solution: https://ruden91.github.io/blog/codewars-decode-the-morse-code/
+
+Code:
+```
+decodeMorse = function(morseCode){
+  morseCode = morseCode.trim();
+  let refinedData = morseCode.split('   ');
+  let result = [];
+  
+  for (let i = 0; i < refinedData.length; i++) {
+    let temp = refinedData[i].split(' ');
+    for (let j = 0; j < temp.length; j++) {
+      if (MORSE_CODE[temp[j]]) {
+        result.push(MORSE_CODE[temp[j]]);
+      }
+    }
+    
+    if (i !== refinedData.length - 1) {
+    result.push(' ');
+    }
+  }
+  return result.join('');
+}
+```
