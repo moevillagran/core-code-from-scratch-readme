@@ -367,7 +367,7 @@ Solution: https://codesandbox.io/s/76drd?file=/src/index.js:0-392
 
 Code:
 ```
-const duplicateCount = (text) => {
+function duplicateCount(text) {
   const splitString = text.toLowerCase().split("").sort();
   let results = [];
 
@@ -378,10 +378,7 @@ const duplicateCount = (text) => {
   }
   const setArray = new Set(results);
   return setArray.size;
-};
-
-duplicateCount("aabBcde");
-console.log(duplicateCount("aaabBcde"));
+}
 ```
 
 **3. Decode The Morse Code**
