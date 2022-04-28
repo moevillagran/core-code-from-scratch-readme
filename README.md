@@ -407,3 +407,86 @@ decodeMorse = function(morseCode){
   return result.join('');
 }
 ```
+### Date: 04/27/2022
+
+**1. Valid Parentheses exercise**
+
+Solution: https://www.youtube.com/watch?v=USclIH0COdI
+
+Code:
+
+```
+function validParentheses(parens) {
+  let openNum = 0;
+  for (let i = 0; i < parens.length; i++){
+    if (parens[i] == "(") {
+      openNum += 1;           
+    } else {
+      openNum -= 1;
+    }
+   
+    if (openNum < 0){
+      return false
+    }    
+  }
+  if (openNum === 0){
+    return true    
+  } else {
+    return false
+  }
+}
+```
+
+
+**2. Convert String To Camel Case exercise**
+Solution: https://www.youtube.com/watch?v=dDktghUdXH8&t=27s
+
+Code:
+```
+function toCamelCase(str){
+  let strArray;
+  
+  
+  if (str === ""){
+    return "";    
+  }
+  
+  if (str.indexOf("-") !== -1){
+    strArray = str.split("-")
+  } else {
+    strArray = str.split("_")
+  }
+  
+  let ccString = strArray[0];
+  
+  for (let i = 0; i < strArray.length; i++){
+    ccString += capitalize(strArray[i]);           
+  }
+  
+  return ccString
+  
+  }
+    
+  let capitalize = (str) => {
+    return str[0].toUpperCase() + str.slice(1);
+    
+}
+```
+
+
+**3. Unique In Order exercise**
+
+Solution: https://www.youtube.com/watch?v=EjavWRX0h5E
+
+Code:
+```
+var uniqueInOrder=function(iterable){
+  let newArr = []
+  for (i = 0; i < iterable.length; i++){
+    if (iterable[i] != iterable[i+1]){
+      newArr.push(iterable[i])      
+    }    
+  }  
+  return newArr
+}
+```
