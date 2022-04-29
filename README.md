@@ -337,7 +337,7 @@ function order(words){
    }).join(' ');
 }  
 ```
-### Date: 04/25/2022
+### Date: 04/26/2022
 **1. Simple Pig Latin**
 
 Solution: https://www.youtube.com/watch?v=M2_mU06kY7E
