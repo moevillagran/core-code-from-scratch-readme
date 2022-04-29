@@ -490,3 +490,35 @@ var uniqueInOrder=function(iterable){
   return newArr
 }
 ```
+### Date: 04/28/2022
+
+**1. Fold An Array exercise**
+```
+function foldArray(a, n) {
+  const r = [], c = a.slice();
+  while (c.length) r.push(c.pop() + (c.shift() || 0));
+  return n - 1 ? foldArray(r, n - 1) : r;
+}
+```
+
+**2. Encrypt This! exercise***
+```
+var encryptThis = function(str) {
+ if(str === '') {return '';
+    }else {
+        let s = str.split(' ');
+        let x = s.map(element => {
+            let a = element.split('');
+            a[0] = element.charCodeAt(0);
+            [a[1], a[a.length - 1]] = [a[a.length - 1], a[1]];
+            return a.join('');});
+      return x.join(' ');
+    }
+}
+```
+
+**3. 1st. Code Challenge: Mission Statement**
+
+I'm a web developer who is uncomfortable being comfortable. I have a wide range of experiences in very diverse roles, such as customer service, quality assurance, learning and development, and accounting. Most of my work experiences have been in world-wide distributed teams at companies based off the USA. Now, I'm perfecting my software development skills to be one of the best in this industry. Fintech companies interest me the most, since their work and projects relate deeply to my passion for finance/accounting automation. Loyalty is my core value: if I'm asking it from you, you already got it from me.
+
+
