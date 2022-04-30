@@ -494,10 +494,11 @@ var uniqueInOrder=function(iterable){
 
 **1. Fold An Array exercise**
 ```
-function foldArray(a, n) {
-  const r = [], c = a.slice();
+function foldArray(array, runs) {
+  const r = [];
+  const c = array.slice();
   while (c.length) r.push(c.pop() + (c.shift() || 0));
-  return n - 1 ? foldArray(r, n - 1) : r;
+  return runs - 1 ? foldArray(r, runs - 1) : r;
 }
 ```
 
