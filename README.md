@@ -459,7 +459,7 @@ function toCamelCase(str){
   
   let ccString = strArray[0];
   
-  for (let i = 0; i < strArray.length; i++){
+  for (let i = 1; i < strArray.length; i++){
     ccString += capitalize(strArray[i]);           
   }
   
