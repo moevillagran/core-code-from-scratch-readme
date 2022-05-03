@@ -35,7 +35,7 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 **MIPS Excercises**
 
 **1. Create a program that adds any two given numbers provided by the user**
-```
+```MIPS
   .data
 	      number1: .asciiz "\nEnter Number 1 : "
 	      number2: .asciiz "\nEnter Number 2: "
@@ -77,7 +77,7 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 ```       
 
 **2. Create a program that displays your name**
-```
+```MIPS
 .data
 	      Name: .asciiz "\nMoises Benjamin Villagran Ortiz"
   .text
@@ -114,7 +114,7 @@ if (cond) {
 **3. Bad Code 2**
 
 The syntax was incorrect. It should have been: if, else if, else.
-```javscript
+```javascript
 var n = 100;
 
 if (n == 100) {
