@@ -196,7 +196,7 @@ let result3 = Math.floor(result2);
 ```
 
 **2. Twice As Old**
-```
+```javascript
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   let difference = ((dadYearsOld - sonYearsOld) * 2) - dadYearsOld;
   return Math.abs(difference);
