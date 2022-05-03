@@ -91,7 +91,7 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 ### Date: 04/07/2022
 
 **1. Print Special Numbers**
-```
+```javascript
 for (var i = 0; i <= 100; i = i + 2) {
   console.log(i);
 }
@@ -101,7 +101,7 @@ for (var i = 0; i <= 100; i = i + 2) {
 
 By using the statement "cond = true", the variable value was changed and the statement was turned in a true statement. Also, when using and if...else statement, the condidition should be between one set of parenthesis not two. Even though I used the documentation on the exercies resources, when running it, it continues to print de "The cond variable is true". :(
 
-```
+```javascript
 var cond = false;
 
 if (cond) {
@@ -114,7 +114,7 @@ if (cond) {
 **3. Bad Code 2**
 
 The syntax was incorrect. It should have been: if, else if, else.
-```
+```javscript
 var n = 100;
 
 if (n == 100) {
@@ -133,14 +133,14 @@ else {
 
 ### Date: 04/19/2022
 **1. Multiply**
-```
+```javascript
 function multiply(a, b){
  return a * b
 }
 ```
 
 **2. ASCII Total**
-```
+```javascript
 function uniTotal(str) {
   let count = 0;
   for (let i = 0; i < str.length; i++) {
@@ -151,14 +151,14 @@ function uniTotal(str) {
 ```
 
 **3. Char From ASCII Value**
-```
+```javascript
 function getChar(c){
 return String.fromCharCode(c);
 }
 ```
 
 **4. Binary Addition**
-```
+```javascript
 function addBinary(a,b) {
 let sum = a + b;
   return sum.toString(2);
@@ -166,7 +166,7 @@ let sum = a + b;
 ```
 
 **5. Student's Final Grade**
-```
+```javascrit
 function finalGrade(exam, projects) {
   let total = 0;
   
@@ -186,7 +186,7 @@ function finalGrade(exam, projects) {
 ### Date: 04/20/2022
 
 **1. Holiday VIII - Duty Free**
-```
+```javascript
 function dutyFree(normPrice, discount, hol){
 let result1 = ((normPrice * discount) / 100);
 let result2 = hol / result1;
@@ -204,7 +204,7 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 ```
 
 **3. Valid Spacing Exercise**
-```
+```javascript
 function validSpacing(s) {
   if (s.length === 0) return true;
   if (s[0] === ' ' || s[s.length - 1] === ' ') return false;
@@ -217,7 +217,7 @@ function validSpacing(s) {
 ```
 
 **4. Fake Binary**
-```
+```javascript
 function fakeBin(x){
 let digits = '';
     for (let i = 0; i < x.length; i++) {
@@ -233,7 +233,7 @@ let digits = '';
 
 ### Date: 04/20/2022
 **1. Remove All Exclamation Marks From The End Of Sentence**
-```
+```javascript
 function remove(inputString) {  
 let result = inputString;
 while (result[result.length - 1] === "!"){
@@ -244,14 +244,14 @@ while (result[result.length - 1] === "!"){
 ```
 
 **2. Vowel Remover**
-```
+```javascript
 function shortcut(mytext) {
   return mytext.replace(/[aeiou]/g, '');
 }
 ```
 
 **3. Rock Paper Scissors!**
-```
+```javascript
 const rps = (user1, user2) => {
   let result = "";
   if (user1 === user2) {
@@ -280,7 +280,7 @@ const rps = (user1, user2) => {
 ```
 
 **4. Persistent Bugger**
-```
+```javascript
 function persistence(num) {
   let counter = 0;
   
@@ -306,7 +306,7 @@ function persistence(num) {
 
 ### Date: 04/25/2022
 **1. Who likes it?**
-```
+```javascript
 function likes(names) {
   if (names.length == 0) return 'no one likes this';
   if (names.length == 1) return names[0] + ' likes this';
@@ -317,7 +317,7 @@ function likes(names) {
 ```
 
 **2. Bit Counting**
-```
+```javascript
 var countBits = function(n) {
    // make an array with the bit result
    const base = (n).toString(2).split('');
@@ -330,7 +330,7 @@ var countBits = function(n) {
 ```
 
 **3. Your Order, Please**
-```
+```javascript
 function order(words){
   return words.split(' ').sort(function(a, b){
       return a.match(/\d/) - b.match(/\d/);
@@ -339,7 +339,7 @@ function order(words){
 ```
 ### Date: 04/26/2022
 **1. Simple Pig Latin**
-```
+```javascript
 function pigIt(str){
   let newArr = [];
   let strArr = str.split(" ")
@@ -357,7 +357,7 @@ function pigIt(str){
 }
 ```
 **2. Counting Duplicates**
-```
+```javascript
 function duplicateCount(text) {
   const splitString = text.toLowerCase().split("").sort();
   let results = [];
@@ -373,7 +373,7 @@ function duplicateCount(text) {
 ```
 
 **3. Decode The Morse Code**
-```
+```javascript
 decodeMorse = function(morseCode){
   morseCode = morseCode.trim();
   let refinedData = morseCode.split('   ');
@@ -396,7 +396,7 @@ decodeMorse = function(morseCode){
 ```
 ### Date: 04/27/2022
 **1. Valid Parentheses exercise**
-```
+```javascript
 function validParentheses(parens) {
   let openNum = 0;
   for (let i = 0; i < parens.length; i++){
@@ -420,7 +420,7 @@ function validParentheses(parens) {
 
 
 **2. Convert String To Camel Case exercise**
-```
+```javascript
 function toCamelCase(str){
   let strArray;
   
@@ -452,7 +452,7 @@ function toCamelCase(str){
 ```
 
 **3. Unique In Order exercise**
-```
+```javascript
 var uniqueInOrder=function(iterable){
   let newArr = []
   for (i = 0; i < iterable.length; i++){
@@ -465,7 +465,7 @@ var uniqueInOrder=function(iterable){
 ```
 ### Date: 04/28/2022
 **1. Fold An Array exercise**
-```
+```javascript
 function foldArray(array, runs) {
   const r = [];
   const c = array.slice();
@@ -475,7 +475,7 @@ function foldArray(array, runs) {
 ```
 
 **2. Encrypt This! exercise***
-```
+```javascript
 var encryptThis = function(str) {
  if(str === '') {return '';
     }else {
