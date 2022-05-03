@@ -339,11 +339,6 @@ function order(words){
 ```
 ### Date: 04/26/2022
 **1. Simple Pig Latin**
-
-Solution: https://www.youtube.com/watch?v=M2_mU06kY7E
-
-Code:
-
 ```
 function pigIt(str){
   let newArr = [];
@@ -362,10 +357,6 @@ function pigIt(str){
 }
 ```
 **2. Counting Duplicates**
-
-Solution: https://codesandbox.io/s/76drd?file=/src/index.js:0-392
-
-Code:
 ```
 function duplicateCount(text) {
   const splitString = text.toLowerCase().split("").sort();
@@ -382,10 +373,6 @@ function duplicateCount(text) {
 ```
 
 **3. Decode The Morse Code**
-
-Solution: https://ruden91.github.io/blog/codewars-decode-the-morse-code/
-
-Code:
 ```
 decodeMorse = function(morseCode){
   morseCode = morseCode.trim();
@@ -408,13 +395,7 @@ decodeMorse = function(morseCode){
 }
 ```
 ### Date: 04/27/2022
-
 **1. Valid Parentheses exercise**
-
-Solution: https://www.youtube.com/watch?v=USclIH0COdI
-
-Code:
-
 ```
 function validParentheses(parens) {
   let openNum = 0;
@@ -439,9 +420,6 @@ function validParentheses(parens) {
 
 
 **2. Convert String To Camel Case exercise**
-Solution: https://www.youtube.com/watch?v=dDktghUdXH8&t=27s
-
-Code:
 ```
 function toCamelCase(str){
   let strArray;
@@ -473,12 +451,7 @@ function toCamelCase(str){
 }
 ```
 
-
 **3. Unique In Order exercise**
-
-Solution: https://www.youtube.com/watch?v=EjavWRX0h5E
-
-Code:
 ```
 var uniqueInOrder=function(iterable){
   let newArr = []
@@ -491,7 +464,6 @@ var uniqueInOrder=function(iterable){
 }
 ```
 ### Date: 04/28/2022
-
 **1. Fold An Array exercise**
 ```
 function foldArray(array, runs) {
