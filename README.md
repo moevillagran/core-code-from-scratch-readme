@@ -166,7 +166,7 @@ let sum = a + b;
 ```
 
 **5. Student's Final Grade**
-```javascrit
+```javascript
 function finalGrade(exam, projects) {
   let total = 0;
   
