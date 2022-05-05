@@ -29,12 +29,14 @@ END
 ### Date: 04/06/2022
 
 **Your date of birth in the matrix?**
-
+[Link]https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e01/desc
 My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 
 **MIPS Excercises**
 
 **1. Create a program that adds any two given numbers provided by the user**
+
+
 ```MIPS
   .data
 	      number1: .asciiz "\nEnter Number 1 : "
