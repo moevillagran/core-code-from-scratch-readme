@@ -1,7 +1,6 @@
 # core-code-from-scratch-readme
 
 ## Week 1
-
 ### Date: 04/05/2022
 **Interpreted and compiled programming languages**
 1. Interpreted languages have a shared source code that can be run in most devices. The advantage of these programming languages is that they are easier to debug and make changes to them, without having to remake the whole code written for a certain app.
@@ -28,13 +27,13 @@ END
 
 ### Date: 04/06/2022
 
-**Your date of birth in the matrix?**
-[Link](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e01/desc)
+[**Your date of birth in the matrix?**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e01/desc)
+
 My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 
 **MIPS Excercises**
 
-**1. Create a program that adds any two given numbers provided by the user**
+[**1. Create a program that adds any two given numbers provided by the user**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e02/desc)
 
 
 ```MIPS
@@ -78,8 +77,9 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
               syscall
 ```       
 
-**2. Create a program that displays your name**
-```MIPS
+[**2. Create a program that displays your name**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e02/desc)
+
+```
 .data
 	      Name: .asciiz "\nMoises Benjamin Villagran Ortiz"
   .text
@@ -92,14 +92,14 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 
 ### Date: 04/07/2022
 
-**1. Print Special Numbers**
+[**1. Print Special Numbers**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e03/desc)
 ```javascript
 for (var i = 0; i <= 100; i = i + 2) {
   console.log(i);
 }
 ```
 
-**2. Bad Code 1**
+[**2. Bad Code 1**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e04/desc)
 
 By using the statement "cond = true", the variable value was changed and the statement was turned in a true statement. Also, when using and if...else statement, the condidition should be between one set of parenthesis not two. Even though I used the documentation on the exercies resources, when running it, it continues to print de "The cond variable is true". :(
 
@@ -113,7 +113,7 @@ if (cond) {
 }
 ```
 
-**3. Bad Code 2**
+[**3. Bad Code 2**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e05/desc)
 
 The syntax was incorrect. It should have been: if, else if, else.
 ```javascript
@@ -132,16 +132,15 @@ else {
 
 
 ## Week 2
-
 ### Date: 04/19/2022
-**1. Multiply**
+[**1. Multiply**](https://www.codewars.com/kata/50654ddff44f800200000004/train/javascript)
 ```javascript
 function multiply(a, b){
  return a * b
 }
 ```
 
-**2. ASCII Total**
+[**2. ASCII Total**](https://www.codewars.com/kata/572b6b2772a38bc1e700007a/train/javascript)
 ```javascript
 function uniTotal(str) {
   let count = 0;
@@ -152,14 +151,14 @@ function uniTotal(str) {
 }
 ```
 
-**3. Char From ASCII Value**
+[**3. Char From ASCII Value**](https://www.codewars.com/kata/55ad04714f0b468e8200001c/train/javascript)
 ```javascript
 function getChar(c){
 return String.fromCharCode(c);
 }
 ```
 
-**4. Binary Addition**
+[**4. Binary Addition**](https://www.codewars.com/kata/551f37452ff852b7bd000139/train/javascript)
 ```javascript
 function addBinary(a,b) {
 let sum = a + b;
@@ -167,7 +166,7 @@ let sum = a + b;
 }
 ```
 
-**5. Student's Final Grade**
+[**5. Student's Final Grade**](https://www.codewars.com/kata/5ad0d8356165e63c140014d4/train/javascript)
 ```javascript
 function finalGrade(exam, projects) {
   let total = 0;
@@ -187,7 +186,7 @@ function finalGrade(exam, projects) {
 
 ### Date: 04/20/2022
 
-**1. Holiday VIII - Duty Free**
+[**1. Holiday VIII - Duty Free**](https://www.codewars.com/kata/57e92e91b63b6cbac20001e5/train/javascript)
 ```javascript
 function dutyFree(normPrice, discount, hol){
 let result1 = ((normPrice * discount) / 100);
@@ -197,7 +196,7 @@ let result3 = Math.floor(result2);
 }
 ```
 
-**2. Twice As Old**
+[**2. Twice As Old**](https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript)
 ```javascript
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   let difference = ((dadYearsOld - sonYearsOld) * 2) - dadYearsOld;
@@ -205,7 +204,7 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 }
 ```
 
-**3. Valid Spacing Exercise**
+[**3. Valid Spacing Exercise**](https://www.codewars.com/kata/5f77d62851f6bc0033616bd8/train/javascript)
 ```javascript
 function validSpacing(s) {
   if (s.length === 0) return true;
@@ -218,7 +217,7 @@ function validSpacing(s) {
 }
 ```
 
-**4. Fake Binary**
+[**4. Fake Binary**](https://www.codewars.com/kata/57eae65a4321032ce000002d/train/javascript)
 ```javascript
 function fakeBin(x){
 let digits = '';
@@ -234,7 +233,7 @@ let digits = '';
 ```
 
 ### Date: 04/20/2022
-**1. Remove All Exclamation Marks From The End Of Sentence**
+[**1. Remove All Exclamation Marks From The End Of Sentence**](https://www.codewars.com/kata/57faece99610ced690000165/train/javascript)
 ```javascript
 function remove(inputString) {  
 let result = inputString;
@@ -245,14 +244,14 @@ while (result[result.length - 1] === "!"){
 }
 ```
 
-**2. Vowel Remover**
+[**2. Vowel Remover**](https://www.codewars.com/kata/5547929140907378f9000039/train/javascript)
 ```javascript
 function shortcut(mytext) {
   return mytext.replace(/[aeiou]/g, '');
 }
 ```
 
-**3. Rock Paper Scissors!**
+[**3. Rock Paper Scissors!**](https://www.codewars.com/kata/5672a98bdbdd995fad00000f/train/javascript)
 ```javascript
 const rps = (user1, user2) => {
   let result = "";
@@ -281,7 +280,7 @@ const rps = (user1, user2) => {
 } 
 ```
 
-**4. Persistent Bugger**
+[**4. Persistent Bugger**](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/javascript)
 ```javascript
 function persistence(num) {
   let counter = 0;
@@ -305,9 +304,8 @@ function persistence(num) {
 ```
 
 ## Week 3
-
 ### Date: 04/25/2022
-**1. Who likes it?**
+[**1. Who likes it?**](https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/javascript)
 ```javascript
 function likes(names) {
   if (names.length == 0) return 'no one likes this';
@@ -318,7 +316,7 @@ function likes(names) {
 }
 ```
 
-**2. Bit Counting**
+[**2. Bit Counting**](https://www.codewars.com/kata/526571aae218b8ee490006f4/train/javascript)
 ```javascript
 var countBits = function(n) {
    // make an array with the bit result
@@ -331,7 +329,7 @@ var countBits = function(n) {
 };
 ```
 
-**3. Your Order, Please**
+[**3. Your Order, Please**](https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/javascript)
 ```javascript
 function order(words){
   return words.split(' ').sort(function(a, b){
@@ -340,7 +338,7 @@ function order(words){
 }  
 ```
 ### Date: 04/26/2022
-**1. Simple Pig Latin**
+[**1. Simple Pig Latin**](https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/javascript)
 ```javascript
 function pigIt(str){
   let newArr = [];
@@ -358,7 +356,7 @@ function pigIt(str){
   
 }
 ```
-**2. Counting Duplicates**
+[**2. Counting Duplicates**](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript)
 ```javascript
 function duplicateCount(text) {
   const splitString = text.toLowerCase().split("").sort();
@@ -374,7 +372,7 @@ function duplicateCount(text) {
 }
 ```
 
-**3. Decode The Morse Code**
+[**3. Decode The Morse Code**](https://www.codewars.com/kata/54b724efac3d5402db00065e/train/javascript)
 ```javascript
 decodeMorse = function(morseCode){
   morseCode = morseCode.trim();
@@ -397,7 +395,7 @@ decodeMorse = function(morseCode){
 }
 ```
 ### Date: 04/27/2022
-**1. Valid Parentheses exercise**
+[**1. Valid Parentheses exercise**](https://www.codewars.com/kata/52774a314c2333f0a7000688/train/javascript)
 ```javascript
 function validParentheses(parens) {
   let openNum = 0;
@@ -419,9 +417,7 @@ function validParentheses(parens) {
   }
 }
 ```
-
-
-**2. Convert String To Camel Case exercise**
+[**2. Convert String To Camel Case exercise**](https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript)
 ```javascript
 function toCamelCase(str){
   let strArray;
@@ -452,8 +448,7 @@ function toCamelCase(str){
     
 }
 ```
-
-**3. Unique In Order exercise**
+[**3. Unique In Order exercise**](https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript)
 ```javascript
 var uniqueInOrder=function(iterable){
   let newArr = []
@@ -466,7 +461,7 @@ var uniqueInOrder=function(iterable){
 }
 ```
 ### Date: 04/28/2022
-**1. Fold An Array exercise**
+[**1. Fold An Array exercise**](https://www.codewars.com/kata/57ea70aa5500adfe8a000110/train/javascript)
 ```javascript
 function foldArray(array, runs) {
   const r = [];
@@ -476,7 +471,7 @@ function foldArray(array, runs) {
 }
 ```
 
-**2. Encrypt This! exercise***
+[**2. Encrypt This! exercise***](https://www.codewars.com/kata/5848565e273af816fb000449/train/javascript)
 ```javascript
 var encryptThis = function(str) {
  if(str === '') {return '';
@@ -495,5 +490,20 @@ var encryptThis = function(str) {
 **3. 1st. Code Challenge: Mission Statement**
 
 I'm a web developer who is uncomfortable being comfortable. I have a wide range of experiences in very diverse roles, such as customer service, quality assurance, learning and development, and accounting. Most of my work experiences have been in world-wide distributed teams at companies based off the USA. Now, I'm perfecting my software development skills to be one of the best in this industry. Fintech companies interest me the most, since their work and projects relate deeply to my passion for finance/accounting automation. Loyalty is my core value: if I'm asking it from you, you already got it from me.
+
+## Week 4
+### Date: 05/04/2022
+[**Simple Validation Of A Username**](https://www.codewars.com/kata/56a3f08aa9a6cc9b75000023/train/javascript)
+```javascript
+function validateUsr(username) {
+  return /^[a-z0-9_]{4,16}$/g.test(username); 
+}
+```
+[**Get Number from String**](https://www.codewars.com/kata/57a37f3cbb99449513000cd8/train/javascript)
+```javascript
+function getNumberFromString(s) {
+   return Number(s.match(/\d/g).join(''));
+}
+```
 
 
