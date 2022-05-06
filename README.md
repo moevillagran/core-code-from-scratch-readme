@@ -505,5 +505,20 @@ function getNumberFromString(s) {
    return Number(s.match(/\d/g).join(''));
 }
 ```
+### Date: 05/04/2022
+[**String Cleaning**](https://www.codewars.com/kata/57e1e61ba396b3727c000251/train/javascript)
+```javascript
+function stringClean(s){
+  return s.replace(/\d/g, "");
+}
+```
+[**Password Validation**](https://www.codewars.com/kata/52e1476c8147a7547a000811/train/javascript)
+```javascript
+function validate(password) {
+    return /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])[A-Za-z0-9]{6,}$/.test(password);
+}
+```
+[**2nd Core Challenge**](https://corecode.notion.site/LinkedIn-Boost-Guide-5974abb0f917458ea235d3288ac6c7d3)
+
 
 
