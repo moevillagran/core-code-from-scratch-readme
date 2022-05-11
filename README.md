@@ -493,32 +493,147 @@ I'm a web developer who is uncomfortable being comfortable. I have a wide range 
 
 ## Week 4
 ### Date: 05/04/2022
-[**Simple Validation Of A Username**](https://www.codewars.com/kata/56a3f08aa9a6cc9b75000023/train/javascript)
+[**1. Simple Validation Of A Username**](https://www.codewars.com/kata/56a3f08aa9a6cc9b75000023/train/javascript)
 ```javascript
 function validateUsr(username) {
   return /^[a-z0-9_]{4,16}$/g.test(username); 
 }
 ```
-[**Get Number from String**](https://www.codewars.com/kata/57a37f3cbb99449513000cd8/train/javascript)
+[**2. Get Number from String**](https://www.codewars.com/kata/57a37f3cbb99449513000cd8/train/javascript)
 ```javascript
 function getNumberFromString(s) {
    return Number(s.match(/\d/g).join(''));
 }
 ```
 ### Date: 05/04/2022
-[**String Cleaning**](https://www.codewars.com/kata/57e1e61ba396b3727c000251/train/javascript)
+[**1. String Cleaning**](https://www.codewars.com/kata/57e1e61ba396b3727c000251/train/javascript)
 ```javascript
 function stringClean(s){
   return s.replace(/\d/g, "");
 }
 ```
-[**Password Validation**](https://www.codewars.com/kata/52e1476c8147a7547a000811/train/javascript)
+[**2. Password Validation**](https://www.codewars.com/kata/52e1476c8147a7547a000811/train/javascript)
 ```javascript
 function validate(password) {
     return /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])[A-Za-z0-9]{6,}$/.test(password);
 }
 ```
-[**2nd Core Challenge**](https://corecode.notion.site/LinkedIn-Boost-Guide-5974abb0f917458ea235d3288ac6c7d3)
+[**3. 2nd Core Challenge**](https://corecode.notion.site/LinkedIn-Boost-Guide-5974abb0f917458ea235d3288ac6c7d3)
 
+## Week 5
+### Date: 05/09/2020
+[**1. Find The Missing Letter**](https://www.codewars.com/kata/5839edaa6754d6fec10000a2/train/javascript)
+```javascript
+function findMissingLetter(array){
+  let first = array[0].charCodeAt(0)
+  for (i = 0; i < array.length; i++){
+    if (first + i !== array[i].charCodeAt(0)){
+      return String.fromCharCode(first + i)
+    }
+  }
+}
+```
+[**2. Reverse of Rotate?**](https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991/train/javascript)
+```javascript
+function revrot(str, sz) {
+  //Validates initial conditions
+  if (sz <= 0 || str == '' || sz > str.length) return '';
+  const arr = [];
+  //String to array
+  const s = str.split('');
+  //Defines the number of chunks according to 'sz' value
+  while (s.length >= sz) {
+    arr.push(s.splice(0, sz));
+  }
+  //Apply 'map' instruction to the array
+  const res = arr.map((x) => {
+    //Calculate the sum of the cubes of the digits in the array
+    const sum = x.reduce((a, c) => a + Math.pow(c, 3), 0);
+    //Validate if the sum is divisible by 2
+    if (sum % 2) {
+      //Sent first digit to the back
+      x.push(x[0]);
+      x.shift();
+      return x.join('');
+    } else {
+      //Reverse chunk
+      return x.reverse().join(''); 
+    }
+  });
+  //Show result
+  return res.join('');
+}
+```
+### Date: 05/10/2022
+[**1. TypeScript Object Type**](https://typescript-exercises.github.io/#exercise=1&file=%2Findex.ts)
+```typescript
+export interface User {
+    name: string;
+    age: number;
+    occupation: string;
+}
 
+export const users: User[] = [
+    {
+        name: 'Max Mustermann',
+        age: 25,
+        occupation: 'Chimney sweep'
+    },
+    {
+        name: 'Kate Müller',
+        age: 23,
+        occupation: 'Astronaut'
+    }
+];
+
+export function logPerson(user: User) {
+    console.log(` - ${user.name}, ${user.age}`);
+}
+
+console.log('Users:');
+users.forEach(logPerson);
+```
+[**2. TypeScript Unions**](https://typescript-exercises.github.io/#exercise=2)
+```typescript
+interface User {
+    name: string;
+    age: number;
+    occupation: string;
+}
+
+interface Admin {
+    name: string;
+    age: number;
+    role: string;
+}
+
+export type Person = User | Admin;
+
+export const persons: Person[] = [
+    {
+        name: 'Max Mustermann',
+        age: 25,
+        occupation: 'Chimney sweep'
+    },
+    {
+        name: 'Jane Doe',
+        age: 32,
+        role: 'Administrator'
+    },
+    {
+        name: 'Kate Müller',
+        age: 23,
+        occupation: 'Astronaut'
+    },
+    {
+        name: 'Bruce Willis',
+        age: 64,
+        role: 'World saver'
+    }
+];
+
+export function logPerson(user: Person) {
+    console.log(` - ${user.name}, ${user.age}`);
+}
+```
 
