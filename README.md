@@ -521,7 +521,7 @@ function validate(password) {
 [**3. 2nd Core Challenge**](https://corecode.notion.site/LinkedIn-Boost-Guide-5974abb0f917458ea235d3288ac6c7d3)
 
 ## Week 5
-### Date: 05/09/2020
+### Date: 05/09/2022
 [**1. Find The Missing Letter**](https://www.codewars.com/kata/5839edaa6754d6fec10000a2/train/javascript)
 ```javascript
 function findMissingLetter(array){
@@ -636,4 +636,20 @@ export function logPerson(user: Person) {
     console.log(` - ${user.name}, ${user.age}`);
 }
 ```
+### Date: 05/12/2022
+[**1. What's Your Poison?**](https://www.codewars.com/kata/58c47a95e4eb57a5b9000094/train/javascript)
+```javascript
+function find(rats) {
+  return rats.reduce((a,b)=>a+Math.pow(2,b),0)
+}
+```
+[**2. Array.diff**](https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript)
+```javascript
+function arrayDiff(a, b) {
+  return a.filter(e => !b.includes(e));
+}
+```
+
+
+
 
