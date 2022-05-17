@@ -636,6 +636,7 @@ export function logPerson(user: Person) {
     console.log(` - ${user.name}, ${user.age}`);
 }
 ```
+
 ### Date: 05/12/2022
 [**1. What's Your Poison?**](https://www.codewars.com/kata/58c47a95e4eb57a5b9000094/train/javascript)
 ```javascript
@@ -643,6 +644,7 @@ function find(rats) {
   return rats.reduce((a,b)=>a+Math.pow(2,b),0)
 }
 ```
+
 [**2. Array.diff**](https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript)
 ```javascript
 function arrayDiff(a, b) {
@@ -650,6 +652,61 @@ function arrayDiff(a, b) {
 }
 ```
 
+## Week 6
+### Date: 05/16/2022
+
+[**1. Square(n) Sum**](https://www.codewars.com/kata/515e271a311df0350d00000f/train/typescript)
+
+```typescript
+export function squareSum(numbers: number[]): number {
+  return numbers.reduce((a,b) => a+Math.pow(b,2),0)
+
+}
+```
+
+[**2. Growth Of A Population**](https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/typescript)
+
+```typescript
+export class G964 {
+    public static nbYear = (p0, percent, aug, p) => {
+        let years = 0;
+        for (years; p0 < p; years++) {
+          p0 += parseInt(p0 * (percent / 100) + aug);
+        }
+        return years;
+    }
+}
+```
 
 
+[**3. Mumbling**](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/typescript)
 
+```typescript
+export function accum(s: string): string {
+  const result = []
+  const lowerStr = s.toLowerCase()
+
+  for(let i = 0; i < lowerStr.length; i++) {
+    let str = lowerStr[i].toUpperCase()
+    for(let j = 0; j < i; j++) {
+      str += lowerStr[i]
+    }
+    result.push(str)
+  }
+
+  return result.join("-")
+  
+}
+```
+[**4. A Wolf In Sheep's Clothing**](https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/typescript)
+
+```typescript
+export function warnTheSheep(queue: string[]): string {
+    if (queue[queue.length -1] === 'wolf') {
+    return 'Pls go away and stop eating my sheep';
+    } else {
+     let index = queue.findIndex( (x) => x == 'wolf' );
+     return `Oi! Sheep number ${queue.length - index - 1}! You are about to be eaten by a wolf!`;
+    }
+}
+```
