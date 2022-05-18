@@ -655,7 +655,7 @@ function arrayDiff(a, b) {
 ## Week 6
 ### Date: 05/16/2022
 
-[**1. Square(n) Sum**](https://www.codewars.com/kata/515e271a311df0350d00000f/train/typescript)
+[**2. Square(n) Sum**](https://www.codewars.com/kata/515e271a311df0350d00000f/train/typescript)
 
 ```typescript
 export function squareSum(numbers: number[]): number {
@@ -664,7 +664,7 @@ export function squareSum(numbers: number[]): number {
 }
 ```
 
-[**2. Growth Of A Population**](https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/typescript)
+[**3. Growth Of A Population**](https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/typescript)
 
 ```typescript
 export class G964 {
@@ -678,8 +678,7 @@ export class G964 {
 }
 ```
 
-
-[**3. Mumbling**](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/typescript)
+[**4. Mumbling**](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/typescript)
 
 ```typescript
 export function accum(s: string): string {
@@ -698,7 +697,7 @@ export function accum(s: string): string {
   
 }
 ```
-[**4. A Wolf In Sheep's Clothing**](https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/typescript)
+[**5. A Wolf In Sheep's Clothing**](https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/typescript)
 
 ```typescript
 export function warnTheSheep(queue: string[]): string {
@@ -708,5 +707,91 @@ export function warnTheSheep(queue: string[]): string {
      let index = queue.findIndex( (x) => x == 'wolf' );
      return `Oi! Sheep number ${queue.length - index - 1}! You are about to be eaten by a wolf!`;
     }
+}
+```
+### Date: 05/17/2022
+
+[**1. A Rule Of Divisibility By 13**](https://www.codewars.com/kata/564057bc348c7200bd0000ff/train/typescript)
+
+```typescript
+export function thirt(n: number): number {
+  let remainders: number[] = [1, 10, 9, 12, 3, 4];
+  let result = n
+    .toString()
+    .split('')
+    .reverse()
+    .map((c: string, i: number) => parseInt(c) * remainders[i % 6])
+    .reduce((p: number, c: number) => (p += c));
+  return n == result ? result : thirt(result);
+}
+```
+
+
+[**2. Playing with digits**](https://www.codewars.com/kata/5552101f47fc5178b1000050/train/typescript)
+
+```typescript
+export function thirt(n: number): number {
+  let remainders: number[] = [1, 10, 9, 12, 3, 4];
+  let result = n
+    .toString()
+    .split('')
+    .reverse()
+    .map((c: string, i: number) => parseInt(c) * remainders[i % 6])
+    .reduce((p: number, c: number) => (p += c));
+  return n == result ? result : thirt(result);
+}
+```
+
+[**3. Valid Braces**](https://www.codewars.com/kata/5277c8a221e209d3f6000b56/train/typescript)
+
+```typescript
+export function validBraces(braces: string): boolean {
+  while (/\(\)|\[\]|\{\}/g.test(braces)) {
+    braces = braces.replace(/\(\)|\[\]|\{\}/g, '');
+  }
+  return braces.length === 0;
+}
+```
+
+[**4. Tic-Tac-Toe**](https://www.codewars.com/kata/5216a87cbf53a9c30f0000dc/train/javascript)
+
+```javascript
+function solveTTT(b) {
+  var xwin = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  for (var i in xwin)
+    if (xwin[i].map((x) => b[x]).join('') == 'XX')
+      return xwin[i].reduce((x, y) => (b[y] == '' ? x + y : x), 0);
+  for (var i in b) if (b[i] == '') return +i;
+}
+```
+
+[**5. Tic-Tac-Toe-like table Generator**](https://www.codewars.com/kata/5b817c2a0ce070ace8002be0/train/javascript)
+
+```javascript
+function displayBoard(board, width){
+  let result = '';
+  let currentCol = 0;
+  for (let i = 0; i < board.length; i++) {
+    const element = board[i];
+    result += ` ${element} ${currentCol === (width - 1) ? '\n' : '|'}`;
+    currentCol++;
+    if (currentCol == width) {
+      currentCol = 0;
+      if (i !== board.length - 1) {
+        result += '-'.repeat((width * 3) + (width - 1)) + '\n';
+      }
+    }
+  }
+  result = result.slice(0, -1);
+  return result;
 }
 ```
