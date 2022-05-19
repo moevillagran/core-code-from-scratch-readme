@@ -26,7 +26,6 @@ END
 ```
 
 ### Date: 04/06/2022
-
 [**Your date of birth in the matrix?**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e01/desc)
 
 My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
@@ -34,8 +33,6 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 **MIPS Excercises**
 
 [**1. Create a program that adds any two given numbers provided by the user**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e02/desc)
-
-
 ```MIPS
   .data
 	      number1: .asciiz "\nEnter Number 1 : "
@@ -78,7 +75,6 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
 ```       
 
 [**2. Create a program that displays your name**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e02/desc)
-
 ```
 .data
 	      Name: .asciiz "\nMoises Benjamin Villagran Ortiz"
@@ -89,9 +85,7 @@ My DOB is 12/04/1994, which in binary is 1100/1/1111100101.
               syscall
 ```
 
-
 ### Date: 04/07/2022
-
 [**1. Print Special Numbers**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week01/exercises/e03/desc)
 ```javascript
 for (var i = 0; i <= 100; i = i + 2) {
@@ -132,6 +126,7 @@ else {
 
 
 ## Week 2
+
 ### Date: 04/19/2022
 [**1. Multiply**](https://www.codewars.com/kata/50654ddff44f800200000004/train/javascript)
 ```javascript
@@ -185,7 +180,6 @@ function finalGrade(exam, projects) {
 ```
 
 ### Date: 04/20/2022
-
 [**1. Holiday VIII - Duty Free**](https://www.codewars.com/kata/57e92e91b63b6cbac20001e5/train/javascript)
 ```javascript
 function dutyFree(normPrice, discount, hol){
@@ -337,6 +331,7 @@ function order(words){
    }).join(' ');
 }  
 ```
+
 ### Date: 04/26/2022
 [**1. Simple Pig Latin**](https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/javascript)
 ```javascript
@@ -356,6 +351,7 @@ function pigIt(str){
   
 }
 ```
+
 [**2. Counting Duplicates**](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript)
 ```javascript
 function duplicateCount(text) {
@@ -394,6 +390,7 @@ decodeMorse = function(morseCode){
   return result.join('');
 }
 ```
+
 ### Date: 04/27/2022
 [**1. Valid Parentheses exercise**](https://www.codewars.com/kata/52774a314c2333f0a7000688/train/javascript)
 ```javascript
@@ -417,12 +414,12 @@ function validParentheses(parens) {
   }
 }
 ```
+
 [**2. Convert String To Camel Case exercise**](https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript)
 ```javascript
 function toCamelCase(str){
   let strArray;
-  
-  
+    
   if (str === ""){
     return "";    
   }
@@ -448,6 +445,7 @@ function toCamelCase(str){
     
 }
 ```
+
 [**3. Unique In Order exercise**](https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript)
 ```javascript
 var uniqueInOrder=function(iterable){
@@ -460,6 +458,7 @@ var uniqueInOrder=function(iterable){
   return newArr
 }
 ```
+
 ### Date: 04/28/2022
 [**1. Fold An Array exercise**](https://www.codewars.com/kata/57ea70aa5500adfe8a000110/train/javascript)
 ```javascript
@@ -499,12 +498,14 @@ function validateUsr(username) {
   return /^[a-z0-9_]{4,16}$/g.test(username); 
 }
 ```
+
 [**2. Get Number from String**](https://www.codewars.com/kata/57a37f3cbb99449513000cd8/train/javascript)
 ```javascript
 function getNumberFromString(s) {
    return Number(s.match(/\d/g).join(''));
 }
 ```
+
 ### Date: 05/04/2022
 [**1. String Cleaning**](https://www.codewars.com/kata/57e1e61ba396b3727c000251/train/javascript)
 ```javascript
@@ -512,12 +513,14 @@ function stringClean(s){
   return s.replace(/\d/g, "");
 }
 ```
+
 [**2. Password Validation**](https://www.codewars.com/kata/52e1476c8147a7547a000811/train/javascript)
 ```javascript
 function validate(password) {
     return /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])[A-Za-z0-9]{6,}$/.test(password);
 }
 ```
+
 [**3. 2nd Core Challenge**](https://corecode.notion.site/LinkedIn-Boost-Guide-5974abb0f917458ea235d3288ac6c7d3)
 
 ## Week 5
@@ -533,6 +536,7 @@ function findMissingLetter(array){
   }
 }
 ```
+
 [**2. Reverse of Rotate?**](https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991/train/javascript)
 ```javascript
 function revrot(str, sz) {
@@ -564,6 +568,7 @@ function revrot(str, sz) {
   return res.join('');
 }
 ```
+
 ### Date: 05/10/2022
 [**1. TypeScript Object Type**](https://typescript-exercises.github.io/#exercise=1&file=%2Findex.ts)
 ```typescript
@@ -593,6 +598,7 @@ export function logPerson(user: User) {
 console.log('Users:');
 users.forEach(logPerson);
 ```
+
 [**2. TypeScript Unions**](https://typescript-exercises.github.io/#exercise=2)
 ```typescript
 interface User {
@@ -654,7 +660,6 @@ function arrayDiff(a, b) {
 
 ## Week 6
 ### Date: 05/16/2022
-
 [**2. Square(n) Sum**](https://www.codewars.com/kata/515e271a311df0350d00000f/train/typescript)
 
 ```typescript
@@ -697,6 +702,7 @@ export function accum(s: string): string {
   
 }
 ```
+
 [**5. A Wolf In Sheep's Clothing**](https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/typescript)
 
 ```typescript
@@ -709,10 +715,9 @@ export function warnTheSheep(queue: string[]): string {
     }
 }
 ```
+
 ### Date: 05/17/2022
-
 [**1. A Rule Of Divisibility By 13**](https://www.codewars.com/kata/564057bc348c7200bd0000ff/train/typescript)
-
 ```typescript
 export function thirt(n: number): number {
   let remainders: number[] = [1, 10, 9, 12, 3, 4];
@@ -726,9 +731,7 @@ export function thirt(n: number): number {
 }
 ```
 
-
 [**2. Playing with digits**](https://www.codewars.com/kata/5552101f47fc5178b1000050/train/typescript)
-
 ```typescript
 export function thirt(n: number): number {
   let remainders: number[] = [1, 10, 9, 12, 3, 4];
@@ -793,5 +796,99 @@ function displayBoard(board, width){
   }
   result = result.slice(0, -1);
   return result;
+}
+```
+
+### Date: 05/18/2022
+[**1. Duplicate Encoder**](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/typescript)
+```typescript
+export function duplicateEncode(word: string){
+    return word
+    .toLowerCase()
+    .split('')
+    .map((a: string, i: number, w: string[]) => {
+      return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')';
+    })
+    .join('');  
+}
+```
+
+[**2. Find the odd int**](https://www.codewars.com/kata/54da5a58ea159efa38000836/train/typescript)
+```typescript
+export function findOdd(xs: number[]): number {
+  return (
+    xs.find(
+      (x: number, i: number, a: number[]) =>
+        a.filter((y: number) => y === x).length % 2 === 1
+    ) || -1
+  );
+}
+```
+
+[**3. Which Are In?**](https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/typescript)
+```typescript
+export class G964 {
+  // inArray is a function that takes in two string-array parameters
+  // to compare the second string-array parameter with the first string-array 
+  // parameter in order to retrieve a string-array containing the first string-array
+  // parameter elements which are contained in one or more elements of the
+  // second string-array parameter.
+  public static inArray(a1: string[], a2: string[]): string[] {
+    // result is the store string-array that we utilize to store the final result
+    // elements.
+    let result : string[] = [];
+    // Loop starts.
+    for(let wordA1 in a1){
+      for(let wordA2 in a2){
+        // We check if second string-array parameter elements contain the 
+        // first string-array as well as if we have already put this in the result
+        // array that we output at the end of this function.
+        if (a2[wordA2].indexOf(a1[wordA1]) >= 0 && result.indexOf(a1[wordA1]) < 0) {
+          result.push(a1[wordA1]);
+        }
+      }
+    }
+    // Finally we sort the result string-array alphabetically.
+    return result.sort();
+  }
+}
+```
+
+[**4. Sums of Parts**](https://www.codewars.com/kata/5ce399e0047a45001c853c2b/train/typescript)
+```typescript
+export function partsSums(ls: number[]): number[] {
+  // We create an empty array that will contain the sum of all the numbers per iteration
+  const response: number [] = [];
+  //By using the reduce property with "ls" we sum all the numbers in the array and send each loop sum iteration to the "response"
+  //empty array.
+  const total = ls.reduce((prev: number, curr: number) => prev + curr, 0);
+  response.push(total);
+  // With the new "response" array created, the for loop will be subtracting each element until the final result is an empty array []
+  for (let i = 0; i < ls.length; i++) {
+    response.push(response[i] - ls[i]);
+  }
+  return response;
+}
+```
+
+[**5. Consecutive strings**](https://www.codewars.com/kata/56a5d994ac971f1ac500003e/train/typescript)
+```typescript	
+export function longestConsec(strarr: string[], k: number): string {
+  let arrLength = strarr.length;
+  let arr = [];
+  
+  if(arrLength == 0 || k > arrLength || k <= 0) return "";
+    
+  for(let i = 0; i <= arrLength - k; i++){
+    let current = strarr[i];
+    for(let ii = k, jj = 1; ii > 1; ii--, jj++){
+      current += strarr[i+jj]
+    }
+  arr.push(current);
+  }
+ return arr.reduce(function (a, b) {
+        return a.length > b.length ? a : a.length == b.length ? a : b;
+    });
+  
 }
 ```
