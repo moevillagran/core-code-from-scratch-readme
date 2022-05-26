@@ -892,3 +892,222 @@ export function longestConsec(strarr: string[], k: number): string {
   
 }
 ```
+
+### Date: 05/19/2022
+[**1. Tile**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week06/exercises/e14/desc)
+```typescript	
+export class Tile {
+  letter: string;
+  value: number;
+
+  constructor(letter: string, value: number) {
+    this.letter = letter;
+    this.value = value;
+  }
+
+  printTile() {
+    console.log(`
+        ===========================
+          Letter: ${this.letter}
+          Value: ${this.value}
+        ===========================
+    `);
+  }
+}
+```
+
+[**2. Time**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week06/exercises/e15/desc)
+```typescript	
+export class Time {
+  hour: number;
+  minute: number;
+  second: number;
+
+  constructor(hour: number, minute: number, second: number) {
+    this.hour = hour;
+    this.minute = minute;
+    this.second = second;
+  }
+
+  printTime() {
+    console.log(`
+        ===========================
+          Hours: ${this.hour}
+          Minutes: ${this.minute}
+          Seconds: ${this.second}
+        ===========================
+    `);
+  }
+
+  getInSeconds(): number {
+    const minutes = this.hour * 60 + this.minute;
+    return minutes * 60 + this.second;
+  }
+}
+```
+
+[**3. Rational**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week06/exercises/e16/desc)
+```typescript
+export class Rational {
+  numerator: number;
+  denominator: number;
+
+  constructor(numerator: number, denominator: number) {
+    this.numerator = numerator;
+    this.denominator = denominator;
+  }
+
+  printRational() {
+    console.log(`${this.numerator} / ${this.denominator}`);
+  }
+
+  invert() {
+    [this.numerator, this.denominator] = [this.denominator, this.numerator];
+  }
+
+  toFloat(): number {
+    return this.numerator / this.denominator;
+  }
+
+  gcd(n: number, d: number): number {
+    if (d == 0) return n;
+    return this.gcd(d, n % d);
+  }
+
+  reduce() {
+    const gcd = this.gcd(this.numerator, this.denominator);
+    this.numerator = this.numerator / gcd;
+    this.denominator = this.denominator / gcd;
+  }
+}
+```
+## Week 7
+### Date: 05/25/2022
+[**1. Interfaces Guided Exercies**](https://docs.microsoft.com/en-us/learn/modules/typescript-implement-interfaces/)
+
+**Code 1**
+```typescript
+interface IceCream{
+    flavor: string;
+    scoops: number;
+    instructions?: string;
+}
+
+interface Sundae extends IceCream {
+    sauce: "chocolate" | "caramel" | "strawberry";
+    nuts?: boolean;
+    whippedCream?: boolean;
+    instructions?: string;
+}
+
+let myIceCream: Sundae = {
+    flavor: "vanilla",
+    scoops: 2,
+    sauce: "caramel",
+    nuts: true
+}
+
+console.log(myIceCream.flavor);
+
+function tooManyScoops (dessert: Sundae){
+    if (dessert.scoops >= 4) {
+        return dessert.scoops + " is too many scoops!";
+    } else {
+        return "Your order will be ready soon!";
+    }
+}
+
+console.log(tooManyScoops({flavor: "vanilla", scoops: 5, sauce: "caramel"}));
+```
+**Code 2**
+```typescript
+interface IceCreamArray {
+    [index: number]: string;
+}
+
+let myIceCream: IceCreamArray;
+myIceCream = ["chocolate", "vanilla", "strawberry"];
+let myStr: string = myIceCream[0];
+console.log(myStr);
+```
+
+**Code 3**
+```typescript
+/* Module 3: Implement interfaces in TypeScript
+   Lab Start  */
+
+/*  EXERCISE 1
+    TODO: Declare the Loan interface. */
+
+interface Loan {
+    principal: number,
+    interestRate: number //* Intereset rate percentage (eg. 14 is 14%)
+}
+
+/*  TODO: Declare the ConventionalLoan interface. */
+
+interface ConventionalLoan extends Loan {
+    months: number //* Total number of months
+} 
+
+
+/*  TODO: Update the calculateInterestOnlyLoanPayment function. */
+
+function calculateInterestOnlyLoanPayment(loanTerms: Loan): string {
+    // Calculates the monthly payment of an interest only loan
+    let interest: number = loanTerms.interestRate / 1200; // Calculates the Monthly Interest Rate of the loan
+    let payment: number;
+    payment = loanTerms.principal * interest;
+    return 'The interest only loan payment is ' + payment.toFixed(2);
+}
+
+/*  TODO: Update the calculateConventionalLoanPayment function. */
+
+function calculateConventionalLoanPayment(loanTerms: ConventionalLoan): string {
+    // Calculates the monthly payment of a conventional loan
+    let interest: number = loanTerms.interestRate / 1200; // Calculates the Monthly Interest Rate of the loan
+    let payment: number;
+    payment = loanTerms.principal * interest / (1 - (Math.pow(1 / (1 + interest), loanTerms.months)));
+    return 'The conventional loan payment is ' + payment.toFixed(2);
+}
+
+let interestOnlyPayment = calculateInterestOnlyLoanPayment({principal: 30000, interestRate: 5});
+let conventionalPayment = calculateConventionalLoanPayment({principal: 30000, interestRate: 5, months: 180});
+
+console.log(interestOnlyPayment);     //* Returns "The interest only loan payment is 125.00" 
+console.log(conventionalPayment);     //* Returns "The conventional loan payment is 237.24" 
+```
+[**2. Build Tower**](https://www.codewars.com/kata/576757b1df89ecf5bd00073b/train/typescript)
+```typescript
+export const towerBuilder = (nFloors: number): string[] => {
+var tower = [];
+for (var i = 0; i < nFloors; i++) {
+tower.push(" ".repeat(nFloors - i - 1)
++ "*".repeat((i * 2)+ 1)
++ " ".repeat(nFloors - i - 1))
+}
+return tower;
+}
+```
+
+[**3. Meeting**](https://www.codewars.com/kata/59df2f8f08c6cec835000012/train/typescript)
+```typescript
+export function meeting(s: string): string {
+  return s
+    .toUpperCase()
+    .split(';')
+    .sort((a: string, b: string) => {
+      const [aFirstName, aLastName] = a.split(':');
+      const [bFirstName, bLastName] = b.split(':');
+      if (aLastName === bLastName) {
+        return aFirstName > bFirstName ? 1 : bFirstName > aFirstName ? -1 : 0;
+      }
+      return aLastName > bLastName ? 1 : bLastName > aLastName ? -1 : 0;
+    })
+    .map((fullName: string) => {
+      const [firstName, lastName] = fullName.split(':');
+      return `(${lastName}, ${firstName})`;
+    })
+    .join('');
+}
+```
