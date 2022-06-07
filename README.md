@@ -1111,3 +1111,50 @@ export function meeting(s: string): string {
     .join('');
 }
 ```
+## Week 8
+### Date: 06/01/2022
+[**2. Make the Deadfish Swim**](https://www.codewars.com/kata/51e0007c1f9378fa810002a9/train/typescript)
+```typescript
+export function parse(data: string): number[] {
+let response:number[] = [];
+let num: number = 0;
+
+data.split("").forEach(function(val) {
+
+if (val == "d") {
+  num--;
+} else if (val == "i") {
+  num ++;
+} else if (val == "s") {
+  num = num*num;
+} else if (val == "o") {
+  response.push(num);
+}
+ 
+});
+return response;
+}
+```
+### Date: 06/02/2022
+[**1. Generics Exercise**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week08/exercises/e00/desc)
+```typescript
+export function parse(data: string): number[] {
+let response:number[] = [];
+let num: number = 0;
+
+data.split("").forEach(function(val) {
+
+if (val == "d") {
+  num--;
+} else if (val == "i") {
+  num ++;
+} else if (val == "s") {
+  num = num*num;
+} else if (val == "o") {
+  response.push(num);
+}
+ 
+});
+return response;
+}
+```
