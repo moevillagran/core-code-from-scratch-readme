@@ -1138,23 +1138,27 @@ return response;
 ### Date: 06/02/2022
 [**1. Generics Exercise**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week08/exercises/e00/desc)
 ```typescript
-export function parse(data: string): number[] {
-let response:number[] = [];
-let num: number = 0;
-
-data.split("").forEach(function(val) {
-
-if (val == "d") {
-  num--;
-} else if (val == "i") {
-  num ++;
-} else if (val == "s") {
-  num = num*num;
-} else if (val == "o") {
-  response.push(num);
+public addFirst(data: T) {
+  if (this.head === null) {
+    this.add(data);
+  } else {
+    let temp = new Node(data);
+    temp.next = this.head;
+    this.head = temp;
+    this.length++;
+  }
 }
- 
-});
-return response;
+
+public removeLast(): void {
+  if (this.head !== null) {
+    let temp = this.head;
+    let previous: Node<T> = temp;
+    while (temp.next !== null) {
+      previous = temp;
+      temp = temp.next;
+    }
+    previous.next = null;
+    this.length--;
+  }
 }
 ```
