@@ -1162,3 +1162,83 @@ public removeLast(): void {
   }
 }
 ```
+## Week 10
+### Date: 06/15/2022
+[**Node.JS Core Understanding**](https://github.com/corecodeio/devguide-from-scratch-2022-02/blob/main/src/technologies/2022/week10/exercises/e02/NODE-CORE.md)
+
+1) What is Node.JS?
+Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
+
+2) What problem does Node.JS solve?
+Node.js came into existence when the original developers of JavaScript extended it from something you could only run in the browser to something you could run on your machine as a standalone application.
+
+3) What is the V8 Javascript Engine?
+This engine takes your JavaScript code and converts it into a faster machine code. Machine code is low-level code which the computer can run without needing to first interpret it.
+
+Is Node.JS really necessary in the Development ecosystem?
+Node. js is a boon for those looking to simplify their tasks for real-time application development like gaming and messenger apps. For those web application that requires using an event-based and non-blocking server, the real-time web application is the answer and Node.
+
+What is the difference between Node.JS and any other browser?
+Another difference is that Node. js supports both the CommonJS and ES module systems (since Node. js v12), while in the browser we are starting to see the ES Modules standard being implemented. In practice, this means that you can use both require() and import in Node.
+
+What is NVM and Why is it useful for Node.JS developers?
+NVM stands for Node. js Version Manager. The nvm command is a POSIX-compliant bash script that makes it easier to manage multiple Node. js versions on a single environment.
+
+
+[**Node.JS Module System**](https://github.com/corecodeio/devguide-from-scratch-2022-02/blob/main/src/technologies/2022/week10/exercises/e02/NODE-MS.md)
+
+1) What is a Javascript Module?
+A module in JavaScript is just a file containing related code. In JavaScript, we use the import and export keywords to share and receive functionalities respectively across different modules. The export keyword is used to make a variable, function, class or object accessible to other modules.
+
+2) Why are Javascript Modules necessary?
+You create modules to better organize and structure your codebase. You can use them to break down large programs into smaller, more manageable, and more independent chunks of code which carry out a single or a couple of related tasks.
+
+3) What module standards are available in Node.JS?
+Node.js includes three types of modules:
+
+- Core Modules
+- Local Modules
+- Third Party Modules
+
+Some of the core modules are:
+- http: 		http module includes classes, methods and events to create Node.js http server.
+- url:		url module includes methods for URL resolution and parsing.
+- querystring: 	querystring module includes methods to deal with query string.
+- path:		path module includes methods to deal with file paths.
+- fs:			fs module includes classes, methods, and events to work with file I/O.
+- util:		util module includes utility functions useful for programmers.
+
+4) What are the differences between ESModules and CommonJS modules?
+In an ES module, the import statement can only be called at the beginning of the file. Calling it anywhere else automatically shifts the expression to the file beginning or can even throw an error. On the other hand, with require() as a function, gets parsed at runtime.
+
+5) Which types of modules exist in Node.JS?
+- Core Modules
+- Local Modules
+- Third Party Modules
+
+[**Client-Server Model**](https://github.com/corecodeio/devguide-from-scratch-2022-02/blob/main/src/technologies/2022/week10/exercises/e02/CLIENT-SERVER.md)
+
+1) What is a Server?
+A server is a computer program or device that provides a service to another computer program and its user, also known as the client. In a data center, the physical computer that a server program runs on is also frequently referred to as a server. That machine might be a dedicated server or it might be used for other purposes.
+
+2) Why is a Client?
+A client is a hardware or software device that requests access to a service that is typically made available by a server.
+
+3) Is a server just another physical computer?
+No, a server is made up of hardware and operating systems. Both elements interact to better serve the several client requests. 
+
+	Why do we refer to a certain class of applications as Servers?
+	An application server is a software framework that delivers content and assets for a client application. Clients include web-based applications, browsers, and mobile apps. Application servers provide clients with access to 	business logic.
+
+	What is the difference?
+	A web server accepts and fulfills requests from clients for static content (i.e., HTML pages, files, images, and videos) from a website. Web servers handle HTTP requests and responses only. An application server exposes business 	logic to the clients, which generates dynamic content.
+
+
+4) Is there any similarity between human communication and the client-server model?
+Absolutely, a client-server is very similiar to the human speaker-listener model. Both models need to have a language in common to understand each other. Also, the communication has a an end, which is taking action over the information/data transmitted.
+
+5) Is the client-server model applicable only to the Web?
+The client-server model, or client-server architecture, is a distributed application framework dividing tasks between servers and clients, which either reside in the same system or communicate through a computer network or the Internet.
+
+	Can you mention any other example of this model outside the Web?
+	You might be using client server systems at the very moment without realizing it. Broadband routers comprise of DHCP servers that provide the home computers with IP addresses. These home computers can be referred to as DHCP 	clients. Print and back-up servers are also examples of this type of network that are used in home or small home businesses.
