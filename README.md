@@ -1164,6 +1164,31 @@ public removeLast(): void {
 ```
 ## Week 10
 ### Date: 06/15/2022
+[**1. Generics Exercise**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week08/exercises/e00/desc)
+```javascript
+import React from 'react';
+
+export const EggList = ({eggs}) => {
+
+  return (
+    <ul>
+    {eggs.map((item, key) => {
+      return <EasterEgg key={key} name={item} />;
+    })
+    }
+    </ul>
+  );
+  
+};
+
+export const EasterEgg = ({name}) => {
+  return (
+    <li>{name}</li>
+  );
+};
+```
+
+### Date: 06/15/2022
 [**Node.JS Core Understanding**](https://github.com/corecodeio/devguide-from-scratch-2022-02/blob/main/src/technologies/2022/week10/exercises/e02/NODE-CORE.md)
 
 1) What is Node.JS?
