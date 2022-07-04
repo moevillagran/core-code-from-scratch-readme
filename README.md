@@ -1193,7 +1193,7 @@ A module in JavaScript is just a file containing related code. In JavaScript, we
 2) Why are Javascript Modules necessary?
 You create modules to better organize and structure your codebase. You can use them to break down large programs into smaller, more manageable, and more independent chunks of code which carry out a single or a couple of related tasks.
 
-3) What module standards are available in Node.JS?
+3) What module standards are available in Node.JS? 
 Node.js includes three types of modules:
 
 - Core Modules
@@ -1201,11 +1201,11 @@ Node.js includes three types of modules:
 - Third Party Modules
 
 Some of the core modules are:
-- http: 		http module includes classes, methods and events to create Node.js http server.
+- http: 	http module includes classes, methods and events to create Node.js http server.
 - url:		url module includes methods for URL resolution and parsing.
 - querystring: 	querystring module includes methods to deal with query string.
 - path:		path module includes methods to deal with file paths.
-- fs:			fs module includes classes, methods, and events to work with file I/O.
+- fs:		fs module includes classes, methods, and events to work with file I/O.
 - util:		util module includes utility functions useful for programmers.
 
 4) What are the differences between ESModules and CommonJS modules?
@@ -1227,18 +1227,90 @@ A client is a hardware or software device that requests access to a service that
 3) Is a server just another physical computer?
 No, a server is made up of hardware and operating systems. Both elements interact to better serve the several client requests. 
 
-	Why do we refer to a certain class of applications as Servers?
-	An application server is a software framework that delivers content and assets for a client application. Clients include web-based applications, browsers, and mobile apps. Application servers provide clients with access to 	business logic.
+4) Why do we refer to a certain class of applications as Servers?
+An application server is a software framework that delivers content and assets for a client application. Clients include web-based applications, browsers, and mobile apps. Application servers provide clients with access to business logic.
 
-	What is the difference?
-	A web server accepts and fulfills requests from clients for static content (i.e., HTML pages, files, images, and videos) from a website. Web servers handle HTTP requests and responses only. An application server exposes business 	logic to the clients, which generates dynamic content.
+5) What is the difference?
+A web server accepts and fulfills requests from clients for static content (i.e., HTML pages, files, images, and videos) from a website. Web servers handle HTTP requests and responses only. An application server exposes business logic to the clients, which generates dynamic content.
 
 
-4) Is there any similarity between human communication and the client-server model?
+6) Is there any similarity between human communication and the client-server model?
 Absolutely, a client-server is very similiar to the human speaker-listener model. Both models need to have a language in common to understand each other. Also, the communication has a an end, which is taking action over the information/data transmitted.
 
-5) Is the client-server model applicable only to the Web?
+7) Is the client-server model applicable only to the Web?
 The client-server model, or client-server architecture, is a distributed application framework dividing tasks between servers and clients, which either reside in the same system or communicate through a computer network or the Internet.
 
-	Can you mention any other example of this model outside the Web?
-	You might be using client server systems at the very moment without realizing it. Broadband routers comprise of DHCP servers that provide the home computers with IP addresses. These home computers can be referred to as DHCP 	clients. Print and back-up servers are also examples of this type of network that are used in home or small home businesses.
+8) Can you mention any other example of this model outside the Web?
+You might be using client server systems at the very moment without realizing it. Broadband routers comprise of DHCP servers that provide the home computers with IP addresses. These home computers can be referred to as DHCP clients. Print and back-up servers are also examples of this type of network that are used in home or small home businesses.
+
+### Date: 06/16/2022
+[**APIs Core Understanding**](https://github.com/corecodeio/devguide-from-scratch-2022-02/blob/main/src/technologies/2022/week10/exercises/e03/APIS-CORE.md)
+
+1) What is an API?
+An application programming interface is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. A document or standard that describes how to build or use such a connection or interface is called an API specification.
+
+2) What is a Protocol?
+In computer science, a set of rules or procedures for transmitting data between electronic devices, such as computers. In order for computers to exchange information, there must be a preexisting agreement as to how the information will be structured and how each side will send and receive it. Among the most important sets of Internet protocols are TCP/IP (Transmission Control Protocol/Internet Protocol), HTTPS (Secure HyperText Transmission Protocol), SMTP (Simple Mail Transfer Protocol), and DNS (Domain Name System).
+
+
+3) Is the term API only applicable to the communication of programs over the Internet?
+There are Private APIs that are often used within an enterprise to improve collaboration. While the API itself is also open as a public API, the difference is it is only open to those that have been granted access. Developers within an organization can take advantage of the functionality from the private API to design and build applications inside the company. Private APIs can leverage the existing functionality of enterprise applications so company employees can communicate more efficiently.
+
+4) Why is structured communication between two programs important?
+Structured communcation allows computers/programs to communicate in the same way so the client and server can interact seemlessly. For example, without a protocol, a transmitting computer, for example, could be sending its data in 8-bit packets while the receiving computer might expect the data in 16-bit packets. Protocols are established by international or industrywide organizations. 
+
+5) Do we humans use APIs when communicating without technology?
+We do use APIs, such as languages and means of communication. By using the same language we make sure our listener understands our message. And by using the same means of communication (letter, messages, e-mail, spoken language), we ensure our messages are being received. 
+
+6) Is an API just another program or a standard?
+An API is a program that allows the communication between to applications/computer systems. However, given the fact they are so necessary they've become a standard for such programs to communcate and let a complete ecosystem work smoothly.
+
+7) Do you know any API? Can you list at least 5 examples of APIs?
+- Weather Snippets
+- Log-in Using XYZ
+- Pay with PayPal
+- Twitter Bots
+- Travel Booking
+
+[**From JSON to REST**](https://github.com/corecodeio/devguide-from-scratch-2022-02/blob/main/src/technologies/2022/week10/exercises/e03/JSON-REST.md)
+1) What is HTTP?
+The Hypertext Transfer Protocol is an application layer protocol in the Internet protocol suite model for distributed, collaborative, hypermedia information systems.
+
+2) What is JSON?
+JSON is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays. It is a common data format with diverse uses in electronic data interchange, including that of web applications with servers
+
+3) Is JSON the same as a plain Javascript object?
+The JSON format is syntactically identical to the code for creating JavaScript objects. Because of this similarity, a JavaScript program can easily convert JSON data into native JavaScript objects.
+
+4) What is REST?
+REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. REST-compliant systems, often called RESTful systems, are characterized by how they are stateless and separate the concerns of client and server. 
+
+5) Is REST a programming language, framework, technology, or architecture pattern?
+Rest is an architecture pattern that improves the way clients and servers interact with each other.
+
+6) What is a Resource in REST?
+A resource in REST is a similar Object in Object Oriented Programming or is like an Entity in a Database. Once a resource is identified then its representation is to be decided using a standard format so that the server can send the resource in the above said format and client can understand the same format.
+
+7) What is a resource identifier?
+Resource identification is the most flexible aspect of designing a REST based system. There is no exact science to identifying resources and there is no right or wrong with resources identified. We can identify resources from domain nouns. A resource could be a document, a video, a business process or even a device.
+
+8) What is an HTTP method?
+HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. Although they can also be nouns, these request methods are sometimes referred to as HTTP verbs.
+
+9) What HTTP methods does REST use within its architecture rules?
+There are five methods commonly used within REST: Post, Put, Patch, Get, and Delete.
+
+10) Why do we use HTTP methods in REST and how do they relate to resources?
+HTTP is a communication protocol with a given mechanism for server-client data transfer. It's most commonly used in REST API just because REST was inspired by WWW (world wide web) which largely used HTTP before REST was defined, so it's easier to implement REST API style with HTTP. A REST Resource is data on which we want to perform operations and the HTTP methods help us manipulate that data, that is there intrinsic relationship.
+
+
+11) Is REST the same as HTTP?
+While many people continue to use the terms REST and HTTP interchangeably, the truth is that they are different things. REST refers to a set of attributes of a particular architectural style, while HTTP is a well-defined protocol that happens to exhibit many features of a RESTful system.
+
+[**REST API Clients**](https://github.com/corecodeio/devguide-from-scratch-2022-02/blob/main/src/technologies/2022/week10/exercises/e03/REST-CLIENTS.md)
+
+1) Does Postman only work with REST APIs?
+Postman can make HTTP calls using SOAP, a platform-independent messaging protocol specification, in addition to REST, GraphQL, and WebSocket requests.
+
+2) Is there an alternative to Postman?
+Swagger UI, Insomnia REST Client, Paw, Apigee, and cURL are the most popular alternatives and competitors to Postman.
