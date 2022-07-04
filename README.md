@@ -1164,7 +1164,7 @@ public removeLast(): void {
 ```
 ## Week 10
 ### Date: 06/15/2022
-[**1. Generics Exercise**](https://github.com/corecodeio/devguide-from-scratch-2022-02/tree/main/src/technologies/2022/week08/exercises/e00/desc)
+[**Easter egg list in ReactJS**](https://www.codewars.com/kata/5a95947f4a6b342636000173)
 ```javascript
 import React from 'react';
 
